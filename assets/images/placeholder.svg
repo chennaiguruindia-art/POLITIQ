@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101D35" />
+      <stop offset="100%" stop-color="#182E54" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgGrad)" />
+  <rect width="800" height="500" fill="url(#grid)" />
+  <circle cx="400" cy="250" r="120" fill="none" stroke="rgba(197, 161, 91, 0.2)" stroke-width="2" />
+  <circle cx="400" cy="250" r="80" fill="none" stroke="rgba(197, 161, 91, 0.4)" stroke-width="1" stroke-dasharray="4,4" />
+  <path d="M400 130 L400 370 M280 250 L520 250" stroke="rgba(197, 161, 91, 0.15)" stroke-width="1" />
+  <polygon points="400,210 440,250 400,290 360,250" fill="none" stroke="#C5A15B" stroke-width="2" />
+  <text x="400" y="325" fill="#FFFFFF" font-family="'Cinzel', serif" font-size="16" font-weight="700" letter-spacing="4" text-anchor="middle">POLITIQ STRATEGIC ARCHIVE</text>
+  <text x="400" y="350" fill="rgba(255,255,255,0.6)" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" letter-spacing="2" text-anchor="middle">DEMO ASSET REPOSITORY</text>
+</svg>

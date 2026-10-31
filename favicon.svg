@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <defs>
+    <linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101D35" />
+      <stop offset="100%" stop-color="#1E335A" />
+    </linearGradient>
+  </defs>
+  <rect width="80" height="80" rx="16" fill="url(#bgG)" />
+  <!-- Pillar on left -->
+  <path d="M16 26 H30 M18 26 V54 M23 26 V54 M28 26 V54 M16 54 H30 M14 22 H32 V26 H14 Z" stroke="#C5A15B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Drafting Compass -->
+  <circle cx="44" cy="24" r="3.5" stroke="#FFFFFF" stroke-width="2.2" fill="none"/>
+  <path d="M44 27.5 L34 60 M44 27.5 L54 60" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Upward Trend Line & Arrow -->
+  <path d="M22 56 L34 42 L43 50 L58 30" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="58,24 64,32 54,34" fill="#FFFFFF"/>
+</svg>
