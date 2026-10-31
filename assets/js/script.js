@@ -89,53 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 5. Lightbox Modal Functionality (gallery.html)
-  const lightboxModal = document.getElementById('lightboxModal');
-  const lightboxImg = document.getElementById('lightboxImg');
-  const lightboxCaption = document.getElementById('lightboxCaption');
-  const lightboxClose = document.getElementById('lightboxClose');
-  const galleryItems = document.querySelectorAll('.gallery-grid-item');
-
-  if (lightboxModal && lightboxImg && galleryItems.length > 0) {
-    galleryItems.forEach(item => {
-      item.addEventListener('click', function () {
-        const fullSrc = this.getAttribute('data-full') || this.querySelector('img').src;
-        const captionText = this.getAttribute('data-caption') || this.querySelector('img').alt || 'POLITIQ Operational Gallery';
-        
-        lightboxImg.src = fullSrc;
-        lightboxImg.alt = captionText;
-        if (lightboxCaption) {
-          lightboxCaption.textContent = captionText;
-        }
-        lightboxModal.classList.add('active');
-        document.body.style.overflow = 'hidden'; // prevent scroll
-      });
-    });
-
-    function closeLightbox() {
-      lightboxModal.classList.remove('active');
-      document.body.style.overflow = '';
-      lightboxImg.src = '';
-    }
-
-    if (lightboxClose) {
-      lightboxClose.addEventListener('click', closeLightbox);
-    }
-
-    lightboxModal.addEventListener('click', function (e) {
-      if (e.target === lightboxModal) {
-        closeLightbox();
-      }
-    });
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
-        closeLightbox();
-      }
-    });
-  }
-
-  // 6. Number Counter Animation for Stats
+  // 5. Number Counter Animation for Stats
   const statNumbers = document.querySelectorAll('.stat-number');
   if (statNumbers.length > 0 && 'IntersectionObserver' in window) {
     const observerOptions = {
